@@ -285,7 +285,7 @@ void exibirMenu() {
     cout << "5. Listar Contatos Favoritos\n";
     cout << "6. Exportar para CSV\n";
     cout << "7. Importar de CSV\n";
-    cout << "8. Adicionar aos favoritos\n";
+    cout << "8. Adicionar Contato aos favoritos (Por nome)\n";
     cout << "0. Sair\n";
 }
 
@@ -299,7 +299,6 @@ int main() {
         exibirMenu();
         cout << "Escolha uma opção: ";
         cin >> escolha;
-        cin.ignore();  // Para limpar o buffer do teclado
 
         switch (escolha) {
             case 1:
